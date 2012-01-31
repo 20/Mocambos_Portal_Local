@@ -1,0 +1,11 @@
+Para criar o ambiente rode o script "install-django-env.sh" que se encontra na pasta 
+"Mocambos_Portal_Local/script".
+
+ ./install-django-env.sh
+
+Depois de ter ja criado e ativado o ambiente com virtualenv, crie uma aplicação django com o comando:
+ python django-admin.py startproject NomeDoPortalLocal
+
+Copie e altere os arquivos "settings.py" e "urls.py" que encontra na pasta "Mocambos_Portal_Local/exemplos/" para
+a raiz da pasta que criou "NomeDoPortalLocal".
+
