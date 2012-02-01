@@ -4,7 +4,7 @@ from django.conf import settings
 #from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 ## For Django-Filebrowser >= 3.4.0
-from filebrowser.sites import site
+#from filebrowser.sites import site
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -21,13 +21,13 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
 #    # For Django-Grappelli
-    url(r'^grappelli/', include('grappelli.urls')),
+#    url(r'^grappelli/', include('grappelli.urls')),
     ## For Django-Filebrowser 3.4.0
-    url(r'^admin/filebrowser/', include(site.urls)),
+#    url(r'^admin/filebrowser/', include(site.urls)),
 #    # For Django-Filebrowser 3.3.0
 #    url(r'^admin/filebrowser/', include('filebrowser.urls')),
     # For django_bfm
-    url(r'^files/', include('django_bfm.urls')),
+#    url(r'^files/', include('django_bfm.urls')),
 )
 
 # For Django-Filer

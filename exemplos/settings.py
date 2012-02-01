@@ -1,6 +1,6 @@
 # Django settings for Mocambos_Portal project.
-BASE_ROOT = '/home/befree/MocambosPortal1/'
-ROOT_URLCONF = 'MocambosPortal1.urls'
+BASE_ROOT = '/home/taina/CasaDeCulturaTaina/'
+ROOT_URLCONF = 'CasaDeCulturaTaina.urls'
 GITANNEX_DIR = 'gitannex'
 SERIALIZED_DIR = 'serialized'
 PORTAL_NAME = 'taina.mocambos.net'
@@ -87,7 +87,7 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    '/home/befree/MocambosPortal1/static/sta',
+    '/home/taina/CasaDeCulturaTaina/static/sta',
 )
 
 # List of finder classes that know how to find static files in
@@ -137,9 +137,9 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 #    'polls',
-    'easy_thumbnails',
+#    'easy_thumbnails',
 #    'filer',
-    'grappelli',
+#    'grappelli',
 #    'filebrowser',
     'django.contrib.admin',
 #    'django_bfm',
@@ -194,7 +194,7 @@ LOGGING = {
         }
 }
 
-ADMIN_MEDIA_PREFIX = STATIC_URL + "grappelli/"
+#ADMIN_MEDIA_PREFIX = STATIC_URL + "grappelli/"
 
 ##############################################################################
 # LDAP Authentication Backend                              

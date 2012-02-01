@@ -1,11 +1,28 @@
 Para criar o ambiente rode o script "install-django-env.sh" que se encontra na pasta 
-"Mocambos_Portal_Local/script".
+"Mocambos_Portal_Local/script":
 
  ./install-django-env.sh
+
+Para ativar o ambiente:
+
+ source ~/VirtualEnvs/Mocambos_Portal/bin/activate
 
 Depois de ter ja criado e ativado o ambiente com virtualenv, crie uma aplicação django com o comando:
  python django-admin.py startproject NomeDoPortalLocal
 
 Copie e altere os arquivos "settings.py" e "urls.py" que encontra na pasta "Mocambos_Portal_Local/exemplos/" para
 a raiz da pasta que criou "NomeDoPortalLocal".
+
+Tem que verificar que todos os links estao certos.
+
+Agora precisa instalar os aplicativos especificos para entrar na rede de portais locais e compartilhar arquivos.
+Vamos instalar o "mmedia" e o "gitannex". Entre na pasta "~/VirtualEnvs/Mocambos_Portal/lib/python2.6/site-packages" e digite:
+ git clone https://20@github.com/20/mmedia.git
+ git clone https://20@github.com/20/gitannex.git
+
+Agora podem entrar na pasta do portal "NomeDoPortalLocal" e:
+criar a estrutura de pasta para os medias:
+ mkdir -p media/gitannex/taina.mocambos.net/serialized
+
+
 
